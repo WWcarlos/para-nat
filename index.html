@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para Nat ❤️</title>
+  <meta name="description" content="Una pequeña carta para Yuly Natalia.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hearts" aria-hidden="true"></div>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-card">
+        <span class="eyebrow">Para Yuly Natalia</span>
+        <h1>Tengo algo que quiero decirte<span>...</span></h1>
+        <p>Una pequeña sorpresa para ti, Nat.</p>
+        <button class="open-btn" id="openBtn">Abrir <span>♥</span></button>
+        <p class="tiny">Hecho por tu Gitzo</p>
+      </div>
+    </section>
+
+    <div id="content" class="hidden">
+      <section class="intro section">
+        <span class="eyebrow">Gitzo → Nat</span>
+        <h2>Eres mi más bonita casualidad, amor.</h2>
+        <p>
+          De todas las cosas inesperadas que pueden pasar en la vida,
+          encontrarte a ti es, sin duda, una de mis favoritas.
+        </p>
+      </section>
+
+      <section class="photos section">
+        <div class="section-heading">
+          <span class="eyebrow">Nuestros recuerdos</span>
+          <h2>Seis pedacitos de nosotros</h2>
+        </div>
+        <div class="photo-grid">
+          <figure><img src="fotos/foto1.jpeg" alt="Recuerdo 1"><figcaption>Ese momento que guardo con cariño.</figcaption></figure>
+          <figure><img src="fotos/foto2.jpeg" alt="Recuerdo 2"><figcaption>Una sonrisa que siempre quiero volver a ver.</figcaption></figure>
+          <figure><img src="fotos/foto3.jpeg" alt="Recuerdo 3"><figcaption>Otro recuerdo que se quedó conmigo.</figcaption></figure>
+          <figure><img src="fotos/foto4.jpeg" alt="Recuerdo 4"><figcaption>Porque contigo hasta lo sencillo se siente especial.</figcaption></figure>
+          <figure><img src="fotos/foto5.jpeg" alt="Recuerdo 5"><figcaption>Un pedacito de nuestra historia.</figcaption></figure>
+          <figure><img src="fotos/foto6.jpeg" alt="Recuerdo 6"><figcaption>Y todavía nos quedan muchísimos momentos.</figcaption></figure>
+        </div>
+      </section>
+
+      <section class="letter section">
+        <div class="paper">
+          <span class="eyebrow">Una carta para Nat</span>
+          <h2>Mi Gitza,</h2>
+          <p>
+            A veces siento que las palabras se quedan cortas para explicar
+            lo mucho que significas para mí. Pero aun así quería intentarlo.
+          </p>
+          <p>
+            Me gusta pensar en nosotros y en todas esas pequeñas cosas que,
+            sin hacer demasiado ruido, terminaron convirtiéndose en recuerdos
+            que quiero conservar. Tu forma de ser, tus ocurrencias, nuestras
+            conversaciones y hasta esos momentos simples que probablemente
+            olvidaríamos si no los viviéramos juntos.
+          </p>
+          <p>
+            Gracias por ser tú, por llegar a mi vida y por hacer que muchos
+            días tengan algo bonito que esperar. No necesito que todo sea
+            perfecto; me basta con que sigamos teniendo razones para reír,
+            hablar, abrazarnos y elegirnos.
+          </p>
+          <p>
+            Y si alguna vez te preguntas qué eres para mí, recuerda esto:
+            <strong>eres mi más bonita casualidad, amor.</strong>
+          </p>
+          <p class="signature">Con amor,<br><strong>tu Gitzo ❤️</strong></p>
+        </div>
+      </section>
+
+      <section class="counter section">
+        <span class="eyebrow">Desde el 3 de febrero</span>
+        <h2>Un poquito de nosotros, en tiempo</h2>
+        <div class="timer" id="timer">
+          <div><strong id="days">0</strong><span>días</span></div>
+          <div><strong id="hours">0</strong><span>horas</span></div>
+          <div><strong id="minutes">0</strong><span>minutos</span></div>
+          <div><strong id="seconds">0</strong><span>segundos</span></div>
+        </div>
+        <p class="muted">Y cada segundo cuenta cuando es contigo.</p>
+      </section>
+
+      <section class="question section">
+        <div class="question-card">
+          <span class="eyebrow">Una última cosa...</span>
+          <h2>¿Sabes qué es lo que más me gusta de nosotros?</h2>
+          <button class="reveal-btn" id="revealBtn">Quiero saberlo ❤️</button>
+          <div class="final-message hidden" id="finalMessage">
+            <p>Que incluso en los días normales, contigo siempre hay algo que se siente extraordinario.</p>
+            <p class="big">Te elegiría otra vez. Y otra. Y otra. ❤️</p>
+            <span>— Gitzo</span>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p>Hecho con mucho cariño para Nat ✨</p>
+        <p class="tiny">3 de febrero · Gitzo & Gitza</p>
+      </footer>
+    </div>
+  </main>
+
+  <!--
+    MÚSICA:
+    Pon tu archivo de audio en musica/young-folks.mp3
+    y descomenta la etiqueta <audio> de abajo si tienes permiso/licencia
+    para usar ese archivo.
+  -->
+  <!-- <audio id="music" loop src="musica/young-folks.mp3"></audio> -->
+
+  <script src="script.js"></script>
+</body>
+</html>

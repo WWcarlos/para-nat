@@ -1,0 +1,54 @@
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#fff8f7;--paper:#fffdfc;--ink:#3f3032;--muted:#806f72;
+  --rose:#b85d6b;--rose-dark:#8f3f4d;--line:#ead8da;--shadow:0 25px 70px rgba(98,45,55,.12)
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:Poppins,sans-serif;overflow-x:hidden}
+h1,h2{font-family:"Cormorant Garamond",serif;font-weight:600;line-height:1.05}
+h1{font-size:clamp(3rem,8vw,6.4rem)}
+h2{font-size:clamp(2.4rem,5vw,4.5rem)}
+p{line-height:1.9}
+.hero{min-height:100svh;display:grid;place-items:center;padding:24px;position:relative;background:
+radial-gradient(circle at 20% 20%,rgba(235,165,177,.28),transparent 32%),
+radial-gradient(circle at 80% 80%,rgba(235,165,177,.22),transparent 30%),var(--bg)}
+.hero-card{text-align:center;max-width:800px;padding:45px 30px;position:relative;z-index:2}
+.eyebrow{text-transform:uppercase;letter-spacing:.22em;font-size:.72rem;color:var(--rose);font-weight:600}
+.hero h1{margin:22px 0 18px}.hero h1 span{color:var(--rose)}
+.hero p{color:var(--muted)}
+.open-btn,.reveal-btn{border:0;cursor:pointer;background:var(--rose-dark);color:#fff;padding:15px 28px;border-radius:999px;font:600 .85rem Poppins,sans-serif;letter-spacing:.06em;box-shadow:0 12px 30px rgba(143,63,77,.22);transition:.25s;margin-top:30px}
+.open-btn:hover,.reveal-btn:hover{transform:translateY(-3px);box-shadow:0 16px 35px rgba(143,63,77,.28)}
+.open-btn span{margin-left:8px}.tiny{font-size:.72rem!important;margin-top:20px;color:#a69497!important}
+.section{max-width:1100px;margin:0 auto;padding:110px 24px}
+.intro{text-align:center;max-width:850px}
+.intro h2{margin:20px 0}.intro p{color:var(--muted);font-size:1.02rem}
+.section-heading{text-align:center;margin-bottom:45px}.section-heading h2{margin-top:18px}
+.photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+figure{background:var(--paper);padding:10px;border:1px solid var(--line);box-shadow:var(--shadow);transform:rotate(var(--r,0deg));transition:.3s}
+figure:nth-child(1){--r:-1deg}figure:nth-child(2){--r:1.2deg}figure:nth-child(3){--r:-.5deg}figure:nth-child(4){--r:.8deg}figure:nth-child(5){--r:-1.2deg}figure:nth-child(6){--r:.5deg}
+figure:hover{transform:translateY(-8px) rotate(0);z-index:2}
+figure img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;background:#f1e5e6}
+figcaption{padding:14px 8px 10px;text-align:center;font:500 .8rem "Cormorant Garamond",serif;color:#735d61}
+.letter{max-width:900px}.paper{background:var(--paper);padding:clamp(30px,6vw,75px);border:1px solid var(--line);box-shadow:var(--shadow);position:relative}
+.paper:before{content:"";position:absolute;inset:12px;border:1px solid #f1e5e6;pointer-events:none}
+.paper h2{margin:20px 0 30px}.paper p{margin:0 0 20px;color:#665356}.paper strong{color:var(--rose-dark)}
+.signature{font-family:"Cormorant Garamond",serif;font-size:1.45rem;margin-top:35px!important}
+.counter{text-align:center}.timer{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin:45px auto 20px;max-width:800px}
+.timer div{padding:24px 12px;border:1px solid var(--line);background:rgba(255,255,255,.65)}
+.timer strong{display:block;font:600 clamp(2rem,5vw,3.5rem) "Cormorant Garamond",serif;color:var(--rose-dark)}
+.timer span{font-size:.7rem;text-transform:uppercase;letter-spacing:.15em;color:var(--muted)}
+.muted{color:var(--muted);font-size:.85rem}
+.question{padding-top:50px;padding-bottom:130px}.question-card{text-align:center;padding:70px 25px;background:#f4e5e7}
+.question-card h2{max-width:720px;margin:20px auto}.final-message{max-width:650px;margin:30px auto 0}.final-message .big{font:600 1.8rem "Cormorant Garamond",serif;color:var(--rose-dark);margin-top:18px}.final-message span{color:var(--muted);font-size:.8rem}
+footer{text-align:center;padding:45px 20px 65px;border-top:1px solid var(--line);color:var(--muted)}
+.hidden{display:none}
+.hearts{position:fixed;inset:0;pointer-events:none;z-index:20;overflow:hidden}
+.float-heart{position:absolute;bottom:-30px;animation:rise linear forwards;opacity:0;color:#c56a78}
+@keyframes rise{0%{transform:translateY(0) rotate(0);opacity:0}15%{opacity:.65}100%{transform:translateY(-110vh) rotate(25deg);opacity:0}}
+@media(max-width:700px){
+  .photo-grid{grid-template-columns:repeat(2,1fr);gap:12px}
+  .section{padding:80px 18px}
+  .timer{grid-template-columns:repeat(2,1fr)}
+  .paper{padding:35px 25px}
+}
+@media(max-width:430px){.photo-grid{grid-template-columns:1fr 1fr}figcaption{font-size:.72rem}}
